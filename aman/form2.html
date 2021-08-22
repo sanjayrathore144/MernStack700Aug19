@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee interest survey form</title>
+</head>
+<body>
+    <form>
+        <h1>Employee Interests Survey form</h1>
+        <br>
+        <br>
+        <label for="n">Enter your name : </label>
+        <input id="n" type="text" name="nm">
+        <br>
+        <br>
+        <label for="dp" >Enter your department : </label>
+        <input id="dp" type="text" name="dep">
+        <br>
+        <br>
+        <label for="sf">Tell us a little about yourself : </label>
+        <textarea id="sf" name="self" rows="4" cols="50"></textarea>
+        <br>
+        <br>
+        <label for="exe">Do you exercise at home? </label>
+        <input id="exe" type="radio" name="exer">
+        <label for="exe"> Yes </label>
+        <input id="exe1" type="radio" name="exer">
+        <label for="exe1"> No </label>
+        <br>
+        <br>
+        <p> How do you like to read about your favorite topics? </p>
+        <br>
+        <input  type="checkbox" name="Books">Books
+        <input type="checkbox" name="Online resources">Online resources
+        <input type="checkbox" name="phone apps"> Phone apps
+        <input type="checkbox" name="Magazines"> Magazines
+        <br>
+        <br>
+        <label for="movie" > What genere of movies do you like?</label>
+        <select id="" name="">
+            <optgroup label="Movie">
+                <option value="comedy">comedy</option>
+                <option value="Action">Action</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Romantic">Romantic</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+        <button>submit form</button>
+    </form>
+</body>
+</html>
