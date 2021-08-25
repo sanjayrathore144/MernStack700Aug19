@@ -8,7 +8,7 @@
                                                         title
                                                     body
                                                         h1
-                                                        h2
+                                                        h2   
                                                         h3
                                                         h4
                                                         h5
@@ -34,8 +34,8 @@
                                                         mark
 
 
-    div
-    span    
+                                                        div
+                                                        span    
                                                         a
                                                         form
                                                             input
@@ -49,19 +49,20 @@
                                                             legend    
                                                         br
                                                         hr
-    table
-        caption
-        thead
-        tbody
-        tfoot
-        tr
-        th
-        td
-    details 
-    summray
+                                                        table
+                                                            caption
+                                                            thead
+                                                            tbody
+                                                            tfoot
+                                                            tr
+                                                            th
+                                                            td
+                                                        details 
+                                                        summray
     nav 
     section
     header
     footer
     address
     time
+    main 

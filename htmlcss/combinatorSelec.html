@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div~span{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <span>this is span 6 </span>
+    <div>
+        <h1>this is heading with <span>span 1 </span></h1>
+    </div>
+    <span>this is span 5 </span>
+    <div><span>this is span 2</span></div>
+    <span>this is span 3 </span>
+    <span>this is span 4 </span>
+
+
+
+</body>
+</html>
+
+<!-- combinator selector  "relationship"   --> 
+space decendant selector  (child of any level)
+>     child selector      (direct child only)
++     adjacent sibling    (just after)
+~     general sibling     (all after)
