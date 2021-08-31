@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            width: 400px;
+            height: 700px;
+            background-color: antiquewhite;
+            margin: 50px auto;
+            display: flex;
+            /* // main axis - flex-direction */
+            flex-direction: column;
+            justify-content: space-evenly;  
+            /* cross axis */
+            align-items: center;
+            flex-wrap: wrap;
+
+            /* flex-start 
+            flex-end 
+            center 
+            space-around
+            space-evenly 
+            space-between */
+        }
+        .child{
+            width: 90%;
+            height: 200px;
+            background-color: aqua;
+            border: 1px solid black;
+            margin-top:15px;
+        }
+        /* .one,.two,.three{
+            width: 24%;
+            height: 300px;          
+        
+        } */
+        /* .one {
+        background-color: aqua;
+      }
+      .two {
+        background-color: red;
+         
+      }
+      .three {
+        background-color: blue;      
+      } */
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>       
+    </div>
+    
+
+
+</body>
+</html>
+
+<!-- display:flex; 
+flex-direction
+flex-wrap
+justify-content
+align-items -->

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .cards{
+            width: 500px;
+            height: 500px;
+            background-color: antiquewhite;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap:10px;
+            grid-template-areas:'o t t'
+                                'o th f'
+                                'fi fi f'
+        }
+        .cards div{
+            background-color: aquamarine;
+        }
+
+        .one{
+            grid-area:o;
+           
+        }
+        .two{
+            grid-area:t;
+            background-image: url(chicago.jpg);
+            background-size: 100% 100%;
+        }
+        .three{
+            grid-area:th;
+        }
+        .four{
+            grid-area:f;
+        }
+        .five{
+            grid-area:fi;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="cards">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+    </div>
+</body>
+</html>
