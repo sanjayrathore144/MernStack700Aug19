@@ -1,0 +1,13 @@
+#xyz {
+	border: 3px solid navy;
+	justify-content: center;
+	background-color: olive;
+	display:flex;
+}
+.one{
+	width: 30%;
+	height: 30%;
+	border: 2px solid rgb(88, 8, 8);
+	margin: 10px;
+	background: orange;
+}
