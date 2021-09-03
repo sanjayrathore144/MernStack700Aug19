@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            width: 700px;
+            height: 300px;
+            background-color: aqua;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .left{
+            width: 50%;
+            height: 300px;
+        
+        }
+        .right{
+            width: 50%;
+            height: 300px;
+            background-color: yellow;
+        }       
+        @media screen and (max-width: 800px) {
+            .one {
+                background-color: red;
+                flex-direction: column-reverse;        
+                height: auto;        
+            }
+            .left, .right{
+                width: 100%;
+            }
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate atque consequuntur, ut nostrum temporibus aliquid possimus saepe dolor accusamus eligendi assumenda quis ullam omnis. Impedit ullam facere ipsa fugit veniam!</div>
+        <div class="right">
+            
+        </div>
+    </div>
+</body>
+</html>
