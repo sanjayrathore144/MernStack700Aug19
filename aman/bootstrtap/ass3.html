@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Bootstrap Template</title>
+    <style>
+        .bg-img{
+            background-image: url("girl_headphone.jpg");
+            background-size: 100%,100%;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            width: 100%;
+            height:650px; 
+        }
+        .headerset{
+            padding-top:180px; 
+            box-sizing:border-box ;
+        }
+        .headerset h2{
+            font-size: 2rem;
+        }
+        .headerset h1{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .ourservices{
+            padding: 100px 0px 60px;
+            /* height: 700px; */
+        }
+        .ourservices h1{
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .imgsetting{
+            color:white;
+            border: 1px solid black;
+            border-radius: 50%;
+            height: 80px;
+            width: 80px;
+            background-color:rgb(247, 188, 80);
+        }
+        .portfolio{
+            height: 1100px;
+            width: 100%;
+            padding: 100px 0px 50px;
+        }
+        .card{
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-img">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand text-warning font-weight-bold" href="#">BOOTSTRAP</a>
+        
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">TEAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container text-center text-white headerset">
+            <h2>Welcome To My Site! </h2>
+            <h1> GLAD! YOU VISIT MY SITE </h1>
+            <button class="btn btn-primary text-white btn-lg"> SUBSCRIBE   </button>
+        </div>
+    </div>
+    <section class="container  ourservices text-center">
+        <h1>SERVICES</h1>
+        <P>Lorem ipsum dolor sit.</P>
+        <div class="row mt-5 p-2">
+            <div class="col-lg-4 col-md-4  col-sm-4 col-10  d-block m-auto">
+                <div class="imgsetting d-block m-auto pt-3"> <i class="fa fa-shopping-cart fa-3x"></i></div>
+                <h2 class="font-weight-bold"> E-Commerce </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit dolorum odit quibusdam obcaecati ut distinctio deleniti earum esse maxime! Enim dolor quis rem molestiae distinctio!</p>
+            </div>
+            <div class="col-lg-4 col-md-4  col-sm-4 col-10  d-block m-auto">
+                <div class="imgsetting d-block m-auto pt-3"> <i class="fa fa-desktop fa-3x"></i></div>
+                <h2 class="font-weight-bold"> Responsive Design </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit dolorum odit quibusdam obcaecati ut distinctio
+                    deleniti earum esse maxime! Enim dolor quis rem molestiae distinctio!</p>
+            </div>
+            <div class="col-lg-4 col-md-4  col-sm-4 col-10  d-block m-auto">
+                <div class="imgsetting d-block m-auto pt-3"> <i class="fa fa-lock fa-3x"></i></div>
+                <h2 class="font-weight-bold"> Web Security </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit dolorum odit quibusdam obcaecati ut distinctio
+                    deleniti earum esse maxime! Enim dolor quis rem molestiae distinctio!</p>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio -->
+    <section class="portfolio bg-light">
+        <div class="container text-center">
+            <h1> PORTFOLIO </h1>
+            <P>Lorem ipsum dolor sit amet consectetur.</P>
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-10 col-12 d-block m-auto">
+                    <div class="card ">
+                        <img class="card-img img-fluid" src="shirt.jpg" alt="Card image" style="height: 300px;">
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-10 col-12 d-block m-auto">
+                    <div class="card">
+                        <img class="card-img img-fluid" src="doghd.jpg" alt="Card image" style="height: 300px;">
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-10 col-12 d-block m-auto">
+                    <div class="card">
+                        <img class="card-img img-fluid" src="chicago.jpg" alt="Card image" style="height: 300px;">
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-md-4 col-lg-4 col-sm-10 col-12 d-block m-auto">
+                    <div class="card ">
+                        <img class="card-img img-fluid" src="la.jpg" alt="Card image" style="height: 300px;">
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-10 col-12 d-block m-auto">
+                    <div class="card">
+                        <img class="card-img img-fluid" src="fancy.jpg" alt="Card image" style="height: 300px;">
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-10 col-12 d-block m-auto">
+                    <div class="card">
+                        <img class="card-img img-fluid" src="ny.jpg" alt="Card image" style="height: 300px;">
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* static positioning - by default position is static */
+        /* relative positioning - move with respect to it's own static origin and will not disturb any other element positioning */
+        /* absolute positioning - move with respect to their non-static parent origin and will leave their static area so that other sibling can occupy it */
+        /* fixed positioning - will take place with respect to viewport */
+        /* sticky positioning - will hold the screen at specific pixel which means that screen is freezed at specific pixel */
+        .parent{
+            width: 90%;
+            background-color: lightskyblue;
+            margin-top: 200px;
+            position: relative;
+        }
+        .one{
+            width: 90%;
+            height: 200px;
+            background-color: maroon;
+        }
+        .two{
+            width: 90%;
+            height: 200px;
+            background-color: rgb(187, 102, 180);
+            /* position: relative; */
+            /* position: absolute;  */
+            /* position: fixed; */
+            position: sticky; 
+            /* will hold the screen before 50px top of  */
+            /* here position is absolute so we need to refer parent position as relative to move the block with parent*/
+            top: 0px;
+        }
+        .three{
+            width: 90%;
+            height: 200px;
+            background-color: peru;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="three"></div>
+        <div class="three"></div>
+        <div class="three"></div>
+        <div class="three"></div>
+    </div>
+</body>
+</html>

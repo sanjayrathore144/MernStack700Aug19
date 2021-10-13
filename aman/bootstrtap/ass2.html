@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .content{
+            height: 700px;
+            width: 100%;
+            padding-top:200px;
+            padding-right: 386px;
+        }
+        .form{
+            width: 600px;
+        }
+        .form .login{
+            width: 320px;
+        }
+        .content .cont{
+            padding-left: 80px;
+        }
+        .cont .para{
+            font-size: 1.7rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron text-center content d-flex ">
+        <div class="container  pt-5 ml-5 cont ">
+            <h2 class="text-primary font-weight-bold display-4 "> facebook </h2>
+            <p class="font-weight-bold para">Facebook helps you connect and share <br> with the people in your life</p>
+        </div>
+        <div class="container rounded bg-white form ml-5 p-4">
+            <form action="/action_page.php">
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Enter email" id="email">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                </div>
+                <button type="submit" class="btn btn-primary login">Log in</button>
+                <div class="form-group form-check mt-2">
+                    <a  href="#"> <small>Forgotten password?</small></a>
+                </div>
+                <hr>
+                <button type="submit" class="btn btn-primary mt-2 bg-success">Create New Account</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

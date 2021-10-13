@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sorting of json object </title>
+    <script>
+        // creaated json object
+        var persons = [
+            {name:"jay",age:"24",marks:"45"},
+            {name:"jay",age:"15",marks:"48"},
+            {name:"jay",age:"18",marks:"40"},
+            {name:"jay",age:"21",marks:"42"}
+        ]
+        // if we want to do sorting based on age or based on marks
+        // function agecmp(a,b){
+        //     return a.age-b.age;
+        // }
+        // // if we want to do sorting based on marks
+        function markscmp(a,b){
+            return a.marks-b.marks;
+        }
+        // persons.sort(agecmp);
+        persons.sort(markscmp);
+        console.log(persons);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

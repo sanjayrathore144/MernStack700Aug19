@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculaitng amount from unit including tax</title>
+    <script>
+        function cleark(){
+            var unit = Number(prompt("Enter your unit"));
+            var amount = Amountcalc(unit);
+            var tax = Taxcalc(amount);
+            var totalamount = amount +  tax;
+            alert("total amount is :" + totalamount);
+        }
+        function Amountcalc(un){
+            if(un <= 200){
+                return un*4;
+            }
+            else if(un>200 && un<=400){
+                return un*5;
+            }
+            else if(un>400){
+                return un*6;
+            }
+        }
+        function Taxcalc(am){
+            var taxfind = (am*10)/100;
+            return taxfind;
+        }
+        cleark();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function which return something</title>
+    <script>
+        alert("one");
+        function sum(a,b){
+            var c = a+b;
+            alert("inside the function");
+            return c;
+        }
+        alert("after the function");
+        var x = sum(2,4);
+        alert(x);
+    </script>
+</head>
+<body>
+    one
+    after the function
+    inside the function
+    6
+</body>
+</html>

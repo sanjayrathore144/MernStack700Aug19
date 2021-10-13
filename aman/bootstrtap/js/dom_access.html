@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- accessing html elemnts using dom(document object model)-->
+    <input type="text" id="text">
+    <button id="button" class="one">click me</button>
+    <p class="one"></p>
+    <p class="one"></p>
+    <p class="one"></p>
+    <script>
+        // first way to accesing elements from dom is
+        // 1.getdocumentById("button") and if we want to change css for button then we can do it like - buttonelement.style.backgroundcolor="red"
+        // var buttonelement = document.getElementById('button');
+        // buttonelement.style.backgroundColor="red";
+        // console.log(buttonelement);
+        // 2.access element by class name and class can be same on different tag - document.getElementByClassName('one')
+        // var oneelement = document.getElementsByClassName("one");
+        // console.log(oneelement); 
+        // for see every element individually on console we use for loop
+        // for(var i=0;i<oneelement.length;i++){
+        //     console.log(oneelement[i]);
+        // }
+        // 3.we can access body elements by tagname too like - document.getElementsByTagName('p')
+        // var elements = document.getElementsByTagName('p');
+        // console.log(elements);
+        // for(let i=0;i<elements.length;i++){
+        //     console.log(elements[i]);
+        // }
+        // 4.we can access body elements by quertyselector from this we can access anything like - class,id,tagname directly too
+        // var element = document.querySelector('#button');
+        // console.log(element);
+        // 5. for accessing multiple queries like multiple class with same name we use querySelectorAll
+        var element = document.querySelectorAll('.one');
+        console.log(element);
+        // for(let i=0;i<element.length;i++){
+        //     console.log(element[i]);
+        // }
+    </script>
+</body>
+</html>

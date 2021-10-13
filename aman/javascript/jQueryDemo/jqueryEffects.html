@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- jquey features we are covering in this coding section -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis provident vero, magnam totam ipsam dicta rerum illum ut? Dolorum, cum.</p>
+    <p>here speed and callback parameters are also present into effect function</p>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="btn">click</button>
+    <script>
+        // $("#hide").click(function(){
+        //     $("p").hide();
+        // })
+        // $("#show").click(function(){
+        //     $("p").show();
+        // })
+        $("#hide").click(function(){
+            $("p").hide(1000);
+        })
+        $("#show").click(function () {
+                $("p").show(1000);
+            })
+        $("#btn").click(function(){
+                $("p").toggle("slow");
+        })
+    </script>
+</body>
+</html>

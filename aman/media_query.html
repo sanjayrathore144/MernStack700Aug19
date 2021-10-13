@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:700px;
+            height:400px;
+            background-color: lightskyblue;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .left{
+            width: 50%;
+            height: 400px;
+            background-image: url("images/images.jpg");
+            background-repeat: no-repeat;
+            background-size:cover ;
+            object-fit: cover;
+        }
+        .right{
+            width: 50%;
+            height: 400px;
+            background-color:royalblue;
+        }
+        @media  screen and (max-width:800px) {
+            .container{
+                background-color: yellowgreen;
+                flex-direction: column-reverse;
+                height: auto;
+            }
+            .left,.right{
+                width:100%;
+            }
+        }        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <!-- <img src="images/images.jpg"> -->
+        </div>
+        <div class="right">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum temporibus reprehenderit excepturi corrupti esse ullam tenetur error fugit laboriosam doloremque molestias, saepe vel aliquam alias quasi consectetur labore, quo recusandae.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* desendent selcector(space) */
+        /* it will match all the elements that are descendent of an specific element */
+        div p{
+            background-color: lightslategray;
+        }
+        /* child selector (>)*/
+        /* it will select all the elements those are directly children of a specified element */
+        div>p{
+            background-color: limegreen;
+        }
+        /* Adjacent sibling selector (+) */
+        /* it will select that element which is immediately after the specified element */
+        div+p{
+            background-color: maroon;
+        }
+        /* General sibling selector (~)*/
+        /* it will select all the siblings after specified element */
+        div~p{
+            background-color: lightcyan;
+            color: mediumblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is a paragraph</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore neque ex illum quos in voluptates, asperiores enim voluptatum odit eum illo cum atque quisquam laboriosam optio, sit repellat sed iure!</p>
+        <span><p>This paragraph is inside the span element</p></span>
+    </div>
+    <p>this is paragraph 2</p>
+    <div>
+        <p>This para is inside the div tag</p>
+    </div>
+    <p>this is paragraph 3</p>
+</body>
+</html>

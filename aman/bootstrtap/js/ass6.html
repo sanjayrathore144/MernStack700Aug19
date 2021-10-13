@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Submit</th>
+            </tr>
+            <tr id="1" >
+                <td class="row-data">1</td>
+                <td class="row-data">akhil</td>
+                <td class="row-data">23</td>
+                <td><input type="button" value="Submit" onclick="show()"></td>
+            </tr>
+            <tr id="2">
+                <td class="row-data">2</td>
+                <td class="row-data">vinay</td>
+                <td class="row-data">22</td>
+                <td><input type="button" value="Submit" onclick="show()"></td>
+            </tr>
+            <tr id="3">
+                <td><input type="button" value="Submit" onclick="show()">
+                <td class="row-data">3</td>
+                <td class="row-data">john</td>
+                <td class="row-data">30</td></td>
+            </tr>
+            <script>
+                function show(){
+                    var rowId = event.target.parentNode.parentNode.id;
+                    var data = document.getElementById(rowId).querySelectorAll('.row-data');
+                    var sequence = data[0].innerHTML;
+                    var name = data[1].innerHTML;
+                    var Age = data[2].innerHTML;
+                    alert( "sequence : "+ sequence +"\nName: " + name + "\nAge: " + Age);
+                }
+            </script>
+        </tbody>
+    </table>
+</body>
+</html>

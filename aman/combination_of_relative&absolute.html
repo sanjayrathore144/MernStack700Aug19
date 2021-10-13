@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 90%;
+            background-color: aqua;
+            margin-top: 200px;
+        }
+        .one{
+            width: 90%;
+            height: 200px;
+            background-color: brown;
+        }
+        .two{
+            width: 90%;
+            height: 200px;
+            background-color:darkgreen;
+        }
+        .three{
+            width: 90%;
+            height: 200px;
+            background-color:yellow;
+        }
+        .four{
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            position: absolute;
+            top:30px;
+            left:200px;
+            z-index: 5; 
+            /* opacity: inherit; */
+            /* overflow: scroll; */
+        }
+        .five{
+            width: 100px;
+            height: 100px;
+            background-color: teal;
+            position: absolute;
+            top: 50px;
+            left: 250px;
+            
+            /* overflow: scroll; */
+        }
+        .frame{
+            width: 500px;
+            height: 150px;
+            background-color: tomato;
+            position: relative;
+            top: 50px;
+            left:450px
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="one"></div>
+        <div class="two">
+          <div class="frame">
+             <div class="four"></div>
+             <div class="five"></div>
+          </div> 
+        </div>
+        <div class="three"></div>
+        <div class="three"></div>
+        <div class="three"></div>
+        <div class="three"></div>
+        <div class="three"></div>
+    </div>
+</body>
+</html>

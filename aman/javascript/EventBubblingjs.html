@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventBubbling and delegation</title>
+    <script>
+        function fun(){
+            alert("fun");
+        }
+        function fun2(){
+            alert("fun2");
+        }
+        function fun3(){
+            alert("fun3");
+        }
+    </script>
+</head>
+<body>
+    <div onclick="fun3()">
+        <a href="" onclick="fun2()">
+            <button onclick="fun()"> Click </button>
+        </a>
+    </div>
+</body>
+</html>

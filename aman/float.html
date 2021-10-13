@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* float property is used for arranging elements in available space either it can be in right or in left in a row */
+        /* whenever web page is made it has two layers first is base layer and second is float layer  if the element is not  using float property then it appears in base layer otherwise in flloat layer*/
+
+        div{
+            height: 200px;
+            width: 200px;
+        }
+        .one{
+            background-color: lawngreen;
+        }
+        .two{
+            background-color: maroon;
+            float: left;
+        }
+        .three{
+            background-color: mediumvioletred;
+            float: left;
+        }
+        .four{
+            background-color: orangered;
+            clear: both;
+        }
+        .five{
+            background-color: orchid;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    <div class="five"></div>
+</body>
+</html>
