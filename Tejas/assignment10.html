@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;  
+        background-image : linear-gradient(lightyellow,seagreen);
+}
+#container{
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 210px 180px;
+        grid-template-areas: "image" "text";
+
+        border-radius: 18px;
+        box-shadow: 10px 10px 10px grey;
+        background-image : linear-gradient( to left, lightyellow,seagreen);
+        margin-top: 100px;
+        transform: rotate(-90deg);
+}
+.card-img{
+        grid-area: image;
+
+}
+img{
+        height: 160px;
+        width: 300px;
+        border-top-left-radius: 18px;
+        border-top-right-radius: 18px;
+}
+.card-text{
+        grid-area: text;
+}
+h1{     
+        width: 300px;
+        margin-top: 90px;
+        font-size: 20px;
+        text-transform: capitalize;
+        margin-left: 90px;
+        transform: rotate(90deg);
+        position: absolute;
+        font-size: 15px;
+        color: seagreen;
+}
+h2{       
+        width: 100px;
+         margin-left: 110px;
+          transform: rotate(90deg);
+          margin-top: -15px;
+          position: absolute;
+          text-transform: capitalize;
+}
+p{         
+            width: 200px;
+           margin-left: -10px ;
+          transform: rotate(90deg);
+          margin-top: 40px;
+          text-align: left;
+          font-size: 15px;
+
+}
+.item1{
+        transform: rotate(180deg);
+        height: 100px;
+        width: 100px;
+        margin-left: 170px;
+        margin-top: -60px;
+        border-radius: 50%;
+        border: 5px solid white;
+}
+.item2{
+         margin-left: -250px;
+        transform: rotate(90deg);
+        margin-top: -100px;
+        color: green;
+}
+.item2 i{
+        margin: 20px;
+}
+    </style>
+    
+</head>
+<body>
+    <div id="container">
+        <div card-img>
+            <img src="photos/ant.jpg">
+            <img class="item1" src="photos/girl.jpg">
+        </div>
+        <div car-text>
+            <h1>ant collector</h1>
+            <h2>morgan sweeney</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. </p>
+            <div class="item2">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-envelope-o"></i>
+            <i class="fa fa-users"></i>
+        </div>
+        </div>
+</div>
+</body>
+</html>
