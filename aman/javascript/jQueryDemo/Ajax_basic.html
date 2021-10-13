@@ -1,0 +1,23 @@
+<!-- Ajax is the art of exchanging the data with server and updating parts of a web page without reloading the whole page  -->
+<!-- Ajax is basically about loading the data in background and display it on webpage without reloading the whole page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").load("demo_test.txt #p1");
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="div1"><h2> Let jquery ajax change this text</h2></div>
+    <button>Get External Content</button>
+</body>
+</html>

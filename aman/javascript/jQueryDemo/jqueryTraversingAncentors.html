@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Traversing Ancentors</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .ancestors * { 
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgrey;
+        padding: 5px;
+        margin: 15px;
+    }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("span").parent().css({"color":"red","border":"2px solid red"});
+        });
+    </script>
+</head>
+<body>
+    <!-- There are three methods to traverse jQuery Ancentors
+    1. parent()
+    2. parents()
+    3. parentsUntil() -->
+    <div class="ancestors">
+        <div style="width:500px;">div (great-grandparent)
+            <ul>ul (grandparent)
+                <li>li (direct parent)
+                    <span>span</span>
+                </li>
+            </ul>
+        </div>
+    
+        <div style="width:500px;">div (grandparent)
+            <p>p (direct parent)
+                <span>span</span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
